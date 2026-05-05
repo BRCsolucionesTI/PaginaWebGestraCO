@@ -1147,13 +1147,14 @@ body {
     top: 93px; left: 125px;
     width: 70px; height: 70px;
     border-radius: 50%;
-    background: var(--gc-dark);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.18);
+    background: #ffffff;
+    border: 2px solid #E2E8F0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.10);
     display: flex; align-items: center; justify-content: center;
     z-index: 2;
   }
 
-  .hub-mn-center img { width: 46px; height: 46px; object-fit: contain; filter: brightness(0) invert(1); }
+  .hub-mn-center img { width: 50px; height: 50px; object-fit: contain; filter: none; }
 }
 
 /* Platform cards row-2: apilar en mobile */
