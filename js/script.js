@@ -13,8 +13,8 @@ if (typeof lucide !== 'undefined') lucide.createIcons();
   const cursor   = document.querySelector('.tw-cursor');
   if (!line1El || !line2El) return;
 
-  const line1 = 'Construimos el futuro';
-  const line2 = 'de la gestión en obra.';
+  const line1 = 'Conecta tu programa de obra';
+  const line2 = 'con lo que pasa en terreno.';
   const speed = 55;
 
   function type(el, text, cb) {
