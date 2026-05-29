@@ -13,8 +13,8 @@ if (typeof lucide !== 'undefined') lucide.createIcons();
   const cursor   = document.querySelector('.tw-cursor');
   if (!line1El || !line2El) return;
 
-  const line1 = 'Conecta tu programa';
-  const line2 = 'con tus operaciones';
+  const line1 = 'Conecta tu programa y';
+  const line2 = 'automatiza tus operaciones con IA';
   const speed = 90;
 
   function type(el, text, cb) {

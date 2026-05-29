@@ -137,8 +137,9 @@
         <!-- Desktop links -->
         <ul class="hidden md:flex items-center gap-8 text-sm font-medium text-gc-dark/70">
             <li><a href="#mision" class="hover:text-gc-dark transition-colors">Misión</a></li>
+            <li><a href="#ia" class="hover:text-gc-dark transition-colors">IA</a></li>
+            <li><a href="#proposito" class="hover:text-gc-dark transition-colors">Propósito</a></li>
             <li><a href="#modulos" class="hover:text-gc-dark transition-colors">Módulos</a></li>
-            <li><a href="#blog" class="hover:text-gc-dark transition-colors">Blog</a></li>
             <li><a href="pages/planes.html" class="hover:text-gc-dark transition-colors">Planes</a></li>
         </ul>
 
@@ -159,8 +160,9 @@
     <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t border-slate-100">
         <ul class="flex flex-col px-6 py-4 gap-4 text-gc-dark font-medium">
             <li><a href="#mision" class="block py-2 border-b border-slate-100">Misión</a></li>
+            <li><a href="#ia" class="block py-2 border-b border-slate-100">IA</a></li>
+            <li><a href="#proposito" class="block py-2 border-b border-slate-100">Propósito</a></li>
             <li><a href="#modulos" class="block py-2 border-b border-slate-100">Módulos</a></li>
-            <li><a href="#blog" class="block py-2 border-b border-slate-100">Blog</a></li>
             <li><a href="pages/planes.html" class="block py-2 border-b border-slate-100">Planes</a></li>
             <li>
                 <button id="mobile-cta-btn" class="w-full bg-gc-orange text-white font-semibold py-3 rounded-full mt-2">
@@ -191,7 +193,7 @@
 
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gc-dark leading-tight tracking-tight mb-6">
                 <span id="tw-line1"></span><br>
-                <span id="tw-line2" class="text-gc-orange"></span><span class="tw-cursor">|</span>
+                <span id="tw-line2" class="text-gc-orange"></span><i data-lucide="sparkles" class="inline-block text-gc-orange" style="width:0.85em;height:0.85em;vertical-align:middle;margin-left:0.2em;stroke-width:2"></i><span class="tw-cursor">|</span>
             </h1>
 
             <p class="gs-reveal text-sm md:text-base text-slate-500 max-w-lg mb-10 leading-relaxed">
@@ -222,7 +224,7 @@
 <!-- ============================================================
      MISIÓN
 ============================================================ -->
-<section id="mision" class="py-8 md:py-20 bg-white overflow-visible">
+<section id="mision" class="py-10 md:py-6 bg-white overflow-visible">
     <div class="max-w-6xl mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
@@ -231,7 +233,7 @@
                 <div class="hub-wrapper">
 
                     <!-- SVG: flujo Programa → GestraCOO → módulos -->
-                    <svg class="hub-svg" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="hub-svg" viewBox="0 0 360 480" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <marker id="hub-arr" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
                                 <path d="M0,0 L0,7 L7,3.5 z" fill="#CBD5E1"/>
@@ -239,29 +241,41 @@
                         </defs>
 
                         <!-- Programa → GestraCOO (horizontal) -->
-                        <line x1="82" y1="180" x2="143" y2="180" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#hub-arr)"/>
-                        <!-- GestraCOO → Subcontratos (diagonal arriba) -->
-                        <line x1="217" y1="180" x2="276" y2="68" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#hub-arr)"/>
-                        <!-- GestraCOO → Materiales (horizontal) -->
-                        <line x1="217" y1="180" x2="276" y2="180" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#hub-arr)"/>
-                        <!-- GestraCOO → Certificaciones (diagonal abajo) -->
-                        <line x1="217" y1="180" x2="276" y2="292" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#hub-arr)"/>
+                        <line x1="82" y1="240" x2="143" y2="240" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#hub-arr)"/>
+                        <!-- GestraCOO → Avances (diagonal arriba fuerte) -->
+                        <line x1="217" y1="240" x2="276" y2="60" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#hub-arr)"/>
+                        <!-- GestraCOO → Calidad (diagonal arriba suave) -->
+                        <line x1="217" y1="240" x2="276" y2="150" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#hub-arr)"/>
+                        <!-- GestraCOO → Subcontratos (horizontal) -->
+                        <line x1="217" y1="240" x2="276" y2="240" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#hub-arr)"/>
+                        <!-- GestraCOO → Materiales (diagonal abajo suave) -->
+                        <line x1="217" y1="240" x2="276" y2="330" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#hub-arr)"/>
+                        <!-- GestraCOO → Certificaciones (diagonal abajo fuerte) -->
+                        <line x1="217" y1="240" x2="276" y2="420" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#hub-arr)"/>
 
                         <!-- Dot: Programa → GC -->
                         <circle r="4.5" fill="#F28C28">
-                            <animateMotion path="M82,180 L143,180" dur="1.5s" repeatCount="indefinite" begin="0s"/>
+                            <animateMotion path="M82,240 L143,240" dur="1.5s" repeatCount="indefinite" begin="0s"/>
+                        </circle>
+                        <!-- Dot: GC → Avances -->
+                        <circle r="3.5" fill="#F28C28" opacity="0.9">
+                            <animateMotion path="M217,240 L276,60" dur="1.3s" repeatCount="indefinite" begin="0.3s"/>
+                        </circle>
+                        <!-- Dot: GC → Calidad -->
+                        <circle r="3.5" fill="#F28C28" opacity="0.9">
+                            <animateMotion path="M217,240 L276,150" dur="1.3s" repeatCount="indefinite" begin="0.6s"/>
                         </circle>
                         <!-- Dot: GC → Subcontratos -->
                         <circle r="3.5" fill="#F28C28" opacity="0.9">
-                            <animateMotion path="M217,180 L276,68" dur="1.3s" repeatCount="indefinite" begin="0.5s"/>
+                            <animateMotion path="M217,240 L276,240" dur="1.3s" repeatCount="indefinite" begin="0.9s"/>
                         </circle>
                         <!-- Dot: GC → Materiales -->
                         <circle r="3.5" fill="#F28C28" opacity="0.9">
-                            <animateMotion path="M217,180 L276,180" dur="1.3s" repeatCount="indefinite" begin="0.9s"/>
+                            <animateMotion path="M217,240 L276,330" dur="1.3s" repeatCount="indefinite" begin="1.2s"/>
                         </circle>
                         <!-- Dot: GC → Certificaciones -->
                         <circle r="3.5" fill="#F28C28" opacity="0.9">
-                            <animateMotion path="M217,180 L276,292" dur="1.3s" repeatCount="indefinite" begin="1.3s"/>
+                            <animateMotion path="M217,240 L276,420" dur="1.3s" repeatCount="indefinite" begin="1.5s"/>
                         </circle>
                     </svg>
 
@@ -278,9 +292,25 @@
                         </div>
                     </div>
 
-                    <!-- SALIDA: Subcontratos (arriba-derecha) -->
-                    <div class="hub-node hub-n2">
+                    <!-- SALIDA: Avances (arriba-derecha 1) -->
+                    <div class="hub-node hub-n5">
+                        <div class="hub-node-inner" style="animation-delay:0.3s">
+                            <div class="hub-face hub-front"><i data-lucide="trending-up" class="hub-icon"></i><span>Avances</span></div>
+                            <div class="hub-face hub-back"><i data-lucide="trending-up" class="hub-icon"></i><span>Avances</span></div>
+                        </div>
+                    </div>
+
+                    <!-- SALIDA: Calidad (arriba-derecha 2) -->
+                    <div class="hub-node hub-n6">
                         <div class="hub-node-inner" style="animation-delay:0.6s">
+                            <div class="hub-face hub-front"><i data-lucide="award" class="hub-icon"></i><span>Calidad</span></div>
+                            <div class="hub-face hub-back"><i data-lucide="award" class="hub-icon"></i><span>Calidad</span></div>
+                        </div>
+                    </div>
+
+                    <!-- SALIDA: Subcontratos (centro-derecha) -->
+                    <div class="hub-node hub-n2">
+                        <div class="hub-node-inner" style="animation-delay:0.9s">
                             <div class="hub-face hub-front"><i data-lucide="users" class="hub-icon"></i><span>Subcontr.</span></div>
                             <div class="hub-face hub-back"><i data-lucide="users" class="hub-icon"></i><span>Subcontr.</span></div>
                         </div>
@@ -306,21 +336,28 @@
 
                 <!-- HUB MOBILE: Programa arriba → GC centro → 3 salidas abajo -->
                 <div class="hub-mobile-layout">
-                    <svg class="hub-m-svg" viewBox="0 0 320 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="hub-m-svg" viewBox="0 0 320 380" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <!-- Programa → GC -->
                         <line x1="160" y1="58" x2="160" y2="110" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 3"/>
-                        <!-- GC → Subcontratos -->
-                        <line x1="140" y1="155" x2="48"  y2="210" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 3"/>
-                        <!-- GC → Materiales -->
-                        <line x1="160" y1="155" x2="160" y2="210" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 3"/>
-                        <!-- GC → Certificaciones -->
-                        <line x1="180" y1="155" x2="272" y2="210" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 3"/>
+                        <!-- GC → Avances (fila media izq) -->
+                        <line x1="145" y1="155" x2="97"  y2="213" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 3"/>
+                        <!-- GC → Calidad (fila media der) -->
+                        <line x1="175" y1="155" x2="223" y2="213" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 3"/>
+                        <!-- GC → Subcontratos (fila baja izq) -->
+                        <line x1="140" y1="155" x2="38"  y2="318" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 3"/>
+                        <!-- GC → Materiales (fila baja centro) -->
+                        <line x1="160" y1="155" x2="160" y2="318" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 3"/>
+                        <!-- GC → Certificaciones (fila baja der) -->
+                        <line x1="180" y1="155" x2="282" y2="318" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="4 3"/>
                         <!-- Dots: Programa → GC -->
                         <circle r="4" fill="#F28C28" opacity="0.9"><animateMotion path="M160,58 L160,110" dur="1.4s" repeatCount="indefinite" begin="0s"/></circle>
-                        <!-- Dots: GC → salidas -->
-                        <circle r="3" fill="#F28C28" opacity="0.85"><animateMotion path="M140,155 L48,210" dur="1.2s" repeatCount="indefinite" begin="0.4s"/></circle>
-                        <circle r="3" fill="#F28C28" opacity="0.85"><animateMotion path="M160,155 L160,210" dur="1.2s" repeatCount="indefinite" begin="0.7s"/></circle>
-                        <circle r="3" fill="#F28C28" opacity="0.85"><animateMotion path="M180,155 L272,210" dur="1.2s" repeatCount="indefinite" begin="1.0s"/></circle>
+                        <!-- Dots: GC → salidas fila media -->
+                        <circle r="3" fill="#F28C28" opacity="0.85"><animateMotion path="M145,155 L97,213" dur="1.2s" repeatCount="indefinite" begin="0.3s"/></circle>
+                        <circle r="3" fill="#F28C28" opacity="0.85"><animateMotion path="M175,155 L223,213" dur="1.2s" repeatCount="indefinite" begin="0.6s"/></circle>
+                        <!-- Dots: GC → salidas fila baja -->
+                        <circle r="3" fill="#F28C28" opacity="0.85"><animateMotion path="M140,155 L38,318" dur="1.2s" repeatCount="indefinite" begin="0.9s"/></circle>
+                        <circle r="3" fill="#F28C28" opacity="0.85"><animateMotion path="M160,155 L160,318" dur="1.2s" repeatCount="indefinite" begin="1.1s"/></circle>
+                        <circle r="3" fill="#F28C28" opacity="0.85"><animateMotion path="M180,155 L282,318" dur="1.2s" repeatCount="indefinite" begin="1.3s"/></circle>
                     </svg>
 
                     <!-- Programa (arriba centro) -->
@@ -330,9 +367,23 @@
                             <div class="hub-mn-back"><i data-lucide="calendar-days" class="hub-mn-icon"></i><span>Programa</span></div>
                         </div>
                     </div>
+                    <!-- Avances (fila media izquierda) -->
+                    <div class="hub-mn hub-mn-ml">
+                        <div class="hub-mn-inner" style="animation-delay:0.3s">
+                            <div class="hub-mn-front"><i data-lucide="trending-up" class="hub-mn-icon"></i><span>Avances</span></div>
+                            <div class="hub-mn-back"><i data-lucide="trending-up" class="hub-mn-icon"></i><span>Avances</span></div>
+                        </div>
+                    </div>
+                    <!-- Calidad (fila media derecha) -->
+                    <div class="hub-mn hub-mn-mr">
+                        <div class="hub-mn-inner" style="animation-delay:0.6s">
+                            <div class="hub-mn-front"><i data-lucide="award" class="hub-mn-icon"></i><span>Calidad</span></div>
+                            <div class="hub-mn-back"><i data-lucide="award" class="hub-mn-icon"></i><span>Calidad</span></div>
+                        </div>
+                    </div>
                     <!-- Subcontratos (abajo izquierda) -->
                     <div class="hub-mn hub-mn-bl">
-                        <div class="hub-mn-inner" style="animation-delay:0.6s">
+                        <div class="hub-mn-inner" style="animation-delay:0.9s">
                             <div class="hub-mn-front"><i data-lucide="users" class="hub-mn-icon"></i><span>Subcontr.</span></div>
                             <div class="hub-mn-back"><i data-lucide="users" class="hub-mn-icon"></i><span>Subcontr.</span></div>
                         </div>
@@ -346,7 +397,7 @@
                     </div>
                     <!-- Certificaciones (abajo derecha) -->
                     <div class="hub-mn hub-mn-br">
-                        <div class="hub-mn-inner" style="animation-delay:1.8s">
+                        <div class="hub-mn-inner" style="animation-delay:1.5s">
                             <div class="hub-mn-front"><i data-lucide="shield-check" class="hub-mn-icon"></i><span>Certific.</span></div>
                             <div class="hub-mn-back"><i data-lucide="shield-check" class="hub-mn-icon"></i><span>Certific.</span></div>
                         </div>
@@ -362,14 +413,46 @@
             <!-- RIGHT: texto -->
             <div>
                 <div class="gs-reveal inline-flex items-center gap-2 text-gc-orange text-sm font-semibold tracking-widest uppercase mb-6">
-                    <i data-lucide="target" class="lc-badge"></i><span>Misión</span>
+                    <i data-lucide="layers" class="lc-badge"></i><span>Qué es GestraCOO</span>
                 </div>
                 <h2 class="gs-reveal text-xl md:text-3xl font-extrabold text-gc-dark leading-tight mb-8">
-                    La información llega tarde.<br>Los retrasos, no.
+                    Una plataforma que conecta el programa con toda la operación de obra.
                 </h2>
                 <p class="gs-reveal text-sm text-slate-500 leading-relaxed">
-                    En obra, el problema no es la falta de trabajo. Es que cada área opera con su propia versión del proyecto. Subcontratos en un archivo, materiales en otro, certificaciones en el correo de alguien. Cuando algo falla, ya es demasiado tarde para actuar.
+                    GestraCOO toma el programa de obra como fuente de verdad y lo conecta con cada operación: define cuándo cerrar subcontratos y aprovisionar materiales, y registra avances y calidad desde terreno mediante app móvil. Todo sincronizado entre terreno y oficina, desde el inicio de obra hasta la recepción municipal.
                 </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     IA
+============================================================ -->
+<section id="ia" class="py-4 md:py-6 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+
+            <!-- LEFT: texto -->
+            <div>
+                <div class="gs-reveal inline-flex items-center gap-2 text-gc-orange text-sm font-semibold tracking-widest uppercase mb-6">
+                    <i data-lucide="sparkles" class="lc-badge"></i><span>Inteligencia Artificial</span>
+                </div>
+                <h2 class="gs-reveal text-xl md:text-3xl font-extrabold text-gc-dark leading-tight mb-6">
+                    Tu obra en el bolsillo.
+                </h2>
+                <p class="gs-reveal text-sm text-slate-500 leading-relaxed mb-4">
+                    Alertas inteligentes que detectan retrasos antes de que ocurran y te avisan cuando algo necesita tu atención.
+                </p>
+                <p class="gs-reveal text-sm text-slate-500 leading-relaxed">
+                    Solo pregunta. El chat de IA responde al instante sobre cualquier aspecto de tu proyecto, desde donde estés.
+                </p>
+            </div>
+
+            <!-- RIGHT: visual chat -->
+            <div class="gs-reveal flex justify-center">
+                <img src="imagenes/celularIA.png" alt="Chat IA GestraCOO" class="w-44 rounded-2xl shadow-lg">
             </div>
 
         </div>
@@ -379,364 +462,139 @@
 <!-- ============================================================
      PROPÓSITO
 ============================================================ -->
-<section id="proposito" class="py-14 md:py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
+<section id="proposito" class="py-14 md:py-20 relative overflow-hidden" style="background: url('imagenes/cosntruccion-civil.png') center/cover no-repeat;">
+    <!-- Overlay blanco base -->
+    <div class="absolute inset-0 bg-white/80"></div>
+    <!-- Degradados en los bordes -->
+    <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white to-transparent"></div>
+    <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
+    <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent"></div>
+    <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
             <!-- LEFT: texto -->
             <div>
                 <div class="gs-reveal inline-flex items-center gap-2 text-gc-orange text-sm font-semibold tracking-widest uppercase mb-6">
-                    <i data-lucide="zap" class="lc-badge"></i><span>Propósito</span>
+                    <i data-lucide="zap" class="lc-badge"></i><span>El problema y la solución</span>
                 </div>
                 <h2 class="gs-reveal text-xl md:text-3xl font-extrabold text-gc-dark leading-tight mb-6">
-                    Un solo lugar donde todos ven lo mismo.
+                    Las obras pierden millones por no tener la situación clara a tiempo.
                 </h2>
-                <p class="gs-reveal text-sm text-slate-500 leading-relaxed mb-10">
-                    Vinculas el programa de obra una vez. Desde ese momento, cada subcontrato, entrega de material y certificación queda conectada al cronograma. Cuando el programa se actualiza, todo el equipo lo sabe. No hay más versiones guardadas en el escritorio de alguien.
+                <p class="gs-reveal text-sm text-slate-500 leading-relaxed mb-4">
+                    Subcontratos sin cerrar cuando arranca la partida, materiales que llegan tarde, avances registrados en papel o en el chat de WhatsApp. Cada área trabaja con su propia versión del proyecto y cuando algo falla, ya no hay margen para reaccionar.
                 </p>
-                <div class="gs-reveal grid grid-cols-2 gap-4">
-                    <div class="bg-slate-50 border border-slate-200 rounded-xl px-6 py-5 text-center">
-                        <div class="text-2xl font-black text-gc-orange mb-1">75%</div>
-                        <div class="text-slate-500 text-xs">menos tiempo en planillas y reportes</div>
-                    </div>
-                    <div class="bg-slate-50 border border-slate-200 rounded-xl px-6 py-5 text-center">
-                        <div class="text-2xl font-black text-gc-orange mb-1">1</div>
-                        <div class="text-slate-500 text-xs">sola versión del proyecto para todo el equipo</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- RIGHT: platform visual cards -->
-            <div class="gs-reveal pv-wrapper">
-
-                <!-- Card 1: Multi-proyecto -->
-                <div class="pv-card pv-card-projects">
-                    <div class="pv-card-header">
-                        <span class="pv-card-title">Proyectos activos</span>
-                        <span class="pv-live-badge"><span class="pv-live-dot"></span>En vivo</span>
-                    </div>
-                    <div class="pv-project-row">
-                        <div class="pv-proj-id" style="background:#0F0F0F">P</div>
-                        <div class="pv-proj-meta">
-                            <span class="pv-proj-name">Los Pinos</span>
-                            <div class="pv-bar-track"><div class="pv-bar" style="--w:72%;--c:#F28C28"></div></div>
-                        </div>
-                        <span class="pv-pct" style="color:#F28C28">72%</span>
-                    </div>
-                    <div class="pv-project-row">
-                        <div class="pv-proj-id" style="background:#334155">P</div>
-                        <div class="pv-proj-meta">
-                            <span class="pv-proj-name">Peumo</span>
-                            <div class="pv-bar-track"><div class="pv-bar" style="--w:45%;--c:#F28C28"></div></div>
-                        </div>
-                        <span class="pv-pct" style="color:#F28C28">45%</span>
-                    </div>
-                    <div class="pv-project-row">
-                        <div class="pv-proj-id" style="background:#475569">A</div>
-                        <div class="pv-proj-meta">
-                            <span class="pv-proj-name">Almendral</span>
-                            <div class="pv-bar-track"><div class="pv-bar" style="--w:28%;--c:#94A3B8"></div></div>
-                        </div>
-                        <span class="pv-pct" style="color:#94A3B8">28%</span>
-                    </div>
-                </div>
-
-                <!-- Row: stats + alertas -->
-                <div class="pv-row-2">
-
-                    <!-- Card 2: Métricas globales -->
-                    <div class="pv-card pv-card-stats">
-                        <div class="pv-stat-item">
-                            <span class="pv-stat-num" data-target="208">0</span>
-                            <span class="pv-stat-lbl">Subcontratos</span>
-                        </div>
-                        <div class="pv-stat-divider"></div>
-                        <div class="pv-stat-item">
-                            <span class="pv-stat-num" data-target="327">0</span>
-                            <span class="pv-stat-lbl">Materiales</span>
-                        </div>
-                        <div class="pv-stat-divider"></div>
-                        <div class="pv-stat-item">
-                            <span class="pv-stat-num" data-target="3">0</span>
-                            <span class="pv-stat-lbl">Proyectos</span>
-                        </div>
-                    </div>
-
-                    <!-- Card 3: Feed de actividad -->
-                    <div class="pv-card pv-card-feed">
-                        <div class="pv-feed-title">Actividad reciente</div>
-                        <div class="pv-feed-item">
-                            <span class="pv-pulse-dot" style="--pc:#22c55e"></span>
-                            <span>Certificación aprobada — Torre A</span>
-                        </div>
-                        <div class="pv-feed-item">
-                            <span class="pv-pulse-dot" style="--pc:#F28C28"></span>
-                            <span>Subcontrato cerrado — Los Pinos</span>
-                        </div>
-                        <div class="pv-feed-item">
-                            <span class="pv-pulse-dot" style="--pc:#3B82F6"></span>
-                            <span>Material entregado — Peumo</span>
-                        </div>
-                        <div class="pv-feed-item">
-                            <span class="pv-pulse-dot" style="--pc:#8B5CF6"></span>
-                            <span>Reporte de avance generado — Almendral</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ============================================================
-     VISIÓN
-============================================================ -->
-<section id="vision" class="py-14 md:py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-
-            <!-- LEFT: alertas animadas (en mobile va abajo) -->
-            <div class="alerts-wrapper order-2 lg:order-1">
-
-                <!-- Header del panel -->
-                <div class="alerts-panel-header">
-                    <div class="alerts-panel-title">
-                        <i data-lucide="bell-ring" class="alerts-panel-icon"></i>
-                        <span>Notificaciones activas</span>
-                    </div>
-                    <span class="alerts-count-badge">4 alertas</span>
-                </div>
-
-                <!-- Alerta 1: Retraso avances (rojo crítico) -->
-                <div class="alert-card alert-critical alerts-anim" style="--delay:0s">
-                    <div class="alert-stripe"></div>
-                    <div class="alert-body">
-                        <div class="alert-top">
-                            <span class="alert-module alert-mod-red">
-                                <i data-lucide="trending-down" class="alert-icon"></i>
-                                Avances
-                            </span>
-                            <span class="alert-time">Hace 5 min</span>
-                        </div>
-                        <p class="alert-msg">Retraso detectado en avance de obra — Torre 1</p>
-                        <div class="alert-tag alert-tag-red">⚠ Crítico</div>
-                    </div>
-                </div>
-
-                <!-- Alerta 2: Subcontratos (naranja) -->
-                <div class="alert-card alert-warning alerts-anim" style="--delay:0.15s">
-                    <div class="alert-stripe"></div>
-                    <div class="alert-body">
-                        <div class="alert-top">
-                            <span class="alert-module alert-mod-orange">
-                                <i data-lucide="file-signature" class="alert-icon"></i>
-                                Subcontratos
-                            </span>
-                            <span class="alert-time">Hace 18 min</span>
-                        </div>
-                        <p class="alert-msg">Firma de contrato con <strong>2 días de retraso</strong></p>
-                        <div class="alert-tag alert-tag-orange">⏱ 2 días vencido</div>
-                    </div>
-                </div>
-
-                <!-- Alerta 3: Materiales (naranja) -->
-                <div class="alert-card alert-warning alerts-anim" style="--delay:0.3s">
-                    <div class="alert-stripe"></div>
-                    <div class="alert-body">
-                        <div class="alert-top">
-                            <span class="alert-module alert-mod-orange">
-                                <i data-lucide="package" class="alert-icon"></i>
-                                Materiales
-                            </span>
-                            <span class="alert-time">Hace 1 hora</span>
-                        </div>
-                        <p class="alert-msg">Cubicación con <strong>3 días de retraso</strong> en entrega</p>
-                        <div class="alert-tag alert-tag-orange">⏱ 3 días vencido</div>
-                    </div>
-                </div>
-
-                <!-- Alerta 4: Certificación (azul info) -->
-                <div class="alert-card alert-info alerts-anim" style="--delay:0.45s">
-                    <div class="alert-stripe"></div>
-                    <div class="alert-body">
-                        <div class="alert-top">
-                            <span class="alert-module alert-mod-blue">
-                                <i data-lucide="shield-check" class="alert-icon"></i>
-                                Certificaciones
-                            </span>
-                            <span class="alert-time">Hoy</span>
-                        </div>
-                        <p class="alert-msg">Faltan <strong>2 días</strong> para vencer certificado de agua y estanque</p>
-                        <div class="alert-tag alert-tag-blue">📋 Próximo a vencer</div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- RIGHT: texto (en mobile va primero) -->
-            <div class="order-1 lg:order-2">
-                <div class="gs-reveal inline-flex items-center gap-2 text-gc-orange text-sm font-semibold tracking-widest uppercase mb-6">
-                    <i data-lucide="telescope" class="lc-badge"></i><span>Visión</span>
-                </div>
-                <h2 class="gs-reveal text-xl md:text-3xl font-extrabold text-gc-dark leading-tight mb-8">
-                    Las herramientas de los grandes, al alcance de todos.
-                </h2>
                 <p class="gs-reveal text-sm text-slate-500 leading-relaxed">
-                    Las constructoras medianas enfrentan exactamente los mismos desafíos operativos que las grandes. La diferencia siempre ha sido el acceso a las herramientas. GestraCOO cambia eso: control operacional de nivel corporativo, sin inversiones iniciales ni licencias que no se pueden costear.
+                    GestraCOO conecta todo desde el programa de obra: sabes con anticipación qué subcontrato cerrar y cuándo, qué material aprovisionar, y ves el avance real de cada partida desde terreno. Las decisiones llegan antes que los retrasos.
                 </p>
+            </div>
+
+            <!-- RIGHT: imagen dashboard -->
+            <div class="gs-reveal flex items-center justify-center">
+                <img src="imagenes/Dasboard gestracoo avnaces .png" alt="Dashboard GestraCOO Avances" class="w-full max-w-lg rounded-2xl shadow-xl">
             </div>
 
         </div>
     </div>
 </section>
+
 
 <!-- ============================================================
      MÓDULOS
 ============================================================ -->
 <section id="modulos" class="page-card py-14 md:py-20 bg-white">
     <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center mb-16">
+
+        <!-- Header -->
+        <div class="text-center mb-20">
             <div class="gs-reveal inline-flex items-center gap-2 text-gc-orange text-sm font-semibold tracking-widest uppercase mb-6">
                 <i data-lucide="settings-2" class="lc-badge"></i><span>Plataforma</span>
             </div>
             <h2 class="gs-reveal text-xl md:text-3xl font-extrabold text-gc-dark leading-tight">
-                Control total sobre cada proceso crítico
+                Todo conectado desde el programa de obra
             </h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Card 1 -->
-            <div class="gs-card light-card rounded-2xl p-5 md:p-8 flex flex-col gap-4">
-                <div class="lc-card-icon text-gc-orange"><i data-lucide="clipboard-list"></i></div>
-                <h3 class="text-base font-bold text-gc-dark">Subcontratos</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Cada subcontrato sigue su flujo de cierre: envío de presupuesto, comparativo, negociación, pre-calificación y contrato firmado, con fechas atadas al inicio de la partida según programa. Si alguna etapa se atrasa, la alerta llega antes de que la obra arranque sin contrato listo.</p>
+        <!-- 1. Cronograma — imagen izq, texto der -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-20 pb-20 border-b border-slate-100">
+            <div class="gs-reveal flex items-center justify-center order-2 lg:order-1">
+                <img src="imagenes/Programa .png" alt="Programa de obra GestraCOO" class="w-full max-w-lg rounded-2xl shadow-lg">
             </div>
-
-            <!-- Card 2 -->
-            <div class="gs-card light-card rounded-2xl p-5 md:p-8 flex flex-col gap-4">
-                <div class="lc-card-icon text-gc-orange"><i data-lucide="package"></i></div>
-                <h3 class="text-base font-bold text-gc-dark">Materiales</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Cubicación, revisión, Solped, OC aprobada y material en obra: cada etapa con fecha vinculada al inicio de la partida según programa. GestraCOO alerta cuando el proceso se atrasa para que ninguna partida empiece esperando un pedido que nadie cerró a tiempo.</p>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="gs-card light-card rounded-2xl p-5 md:p-8 flex flex-col gap-4">
-                <div class="lc-card-icon text-gc-orange"><i data-lucide="shield-check"></i></div>
-                <h3 class="text-base font-bold text-gc-dark">Certificaciones municipales</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Sin observaciones de última hora. Cada certificado, protocolo y ensaye organizado y vigente para que la recepción final ante la municipalidad no tenga sorpresas.</p>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="gs-card light-card rounded-2xl p-5 md:p-8 flex flex-col gap-4">
-                <div class="lc-card-icon text-gc-orange"><i data-lucide="smartphone"></i></div>
-                <h3 class="text-base font-bold text-gc-dark">El terreno informa. La jefatura decide.</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">El equipo en obra registra avances desde el celular. Tú ves el estado real del proyecto en tiempo real, sin esperar el informe del lunes ni perseguir a nadie por teléfono.</p>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="gs-card light-card rounded-2xl p-5 md:p-8 flex flex-col gap-4 md:col-span-2 lg:col-span-1">
-                <div class="lc-card-icon text-gc-orange"><i data-lucide="calendar-check"></i></div>
-                <h3 class="text-base font-bold text-gc-dark">El cronograma como eje de todo</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">El programa de obra no vive en el escritorio del planificador. Vive en la plataforma, conectado con las operaciones. Cuando se actualiza, todos lo saben y todo se realinea.</p>
+            <div class="order-1 lg:order-2">
+                <div class="gs-reveal inline-flex items-center gap-2 text-gc-orange text-xs font-semibold tracking-widest uppercase mb-4">
+                    <i data-lucide="calendar-check" class="lc-badge"></i><span>01 — Cronograma</span>
+                </div>
+                <h3 class="gs-reveal text-xl md:text-2xl font-extrabold text-gc-dark leading-tight mb-4">El programa de obra como fuente de verdad</h3>
+                <p class="gs-reveal text-sm text-slate-500 leading-relaxed">El programa de obra no vive en el escritorio del planificador. Vive en la plataforma y conecta cada operación de la obra. Cuando se actualiza, todo el equipo lo sabe al instante y cada fecha crítica se realinea automáticamente.</p>
             </div>
         </div>
-    </div>
-</section>
 
-<!-- ============================================================
-     BLOG
-============================================================ -->
-<section id="blog" class="page-card py-14 md:py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-        <div class="text-center mb-14">
-            <div class="gs-reveal inline-flex items-center gap-2 text-gc-orange text-sm font-semibold tracking-widest uppercase mb-6">
-                <i data-lucide="book-open" class="lc-badge"></i><span>Blog</span>
+        <!-- 2. Avances + Calidad — texto izq, imagen der -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-20 pb-20 border-b border-slate-100">
+            <div>
+                <div class="gs-reveal inline-flex items-center gap-2 text-gc-orange text-xs font-semibold tracking-widest uppercase mb-4">
+                    <i data-lucide="smartphone" class="lc-badge"></i><span>02 — Avances y Calidad · App móvil</span>
+                </div>
+                <h3 class="gs-reveal text-xl md:text-2xl font-extrabold text-gc-dark leading-tight mb-4">Terreno y oficina, en tiempo real</h3>
+                <p class="gs-reveal text-sm text-slate-500 leading-relaxed mb-3">El equipo en obra registra el avance de cada partida desde el celular. Sin esperar el informe del lunes ni perseguir a nadie por teléfono: tú ves el estado real del proyecto en tiempo real.</p>
+                <p class="gs-reveal text-sm text-slate-500 leading-relaxed">La calidad se registra en el mismo flujo: protocolos, ensayes e inspecciones con evidencia fotográfica y firma digital desde terreno. Cada partida queda respaldada antes de que alguien la necesite.</p>
             </div>
-            <h2 class="gs-reveal text-xl md:text-2xl font-extrabold text-gc-dark">Aprende con nuestro blog</h2>
-            <p class="gs-reveal text-slate-500 mt-3">Guías, mejores prácticas y casos de éxito en gestión de construcción</p>
-        </div>
-
-        <div class="blog-slider-container relative">
-            <button class="blog-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 rounded-full bg-gc-dark text-white flex items-center justify-center shadow-lg hover:bg-gc-orange transition-colors hidden md:flex">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </button>
-
-            <div class="blog-slider overflow-hidden">
-                <div class="blog-track flex gap-6 transition-transform duration-500">
-                    <article class="blog-card-slider flex-none w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-slate-50 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="imagenes/cosntruccion-civil.png" alt="Gestión de subcontratos" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <span class="text-xs font-semibold text-gc-orange uppercase tracking-wide">Gestión</span>
-                            <h3 class="font-bold text-gc-dark mt-2 mb-2">Cómo Gestionar Subcontratos en Construcción</h3>
-                            <p class="text-slate-500 text-sm mb-4">Descubre las mejores prácticas para controlar subcontratistas, evitar retrasos y optimizar costos.</p>
-                            <a href="blog/gestion-subcontratos-construccion.html" class="text-gc-orange font-semibold text-sm hover:underline">Leer más →</a>
-                        </div>
-                    </article>
-                    <article class="blog-card-slider flex-none w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-slate-50 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="imagenes/fotoestaditica.png" alt="Control de materiales" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <span class="text-xs font-semibold text-gc-orange uppercase tracking-wide">Control</span>
-                            <h3 class="font-bold text-gc-dark mt-2 mb-2">Control de Materiales: 7 Errores Críticos</h3>
-                            <p class="text-slate-500 text-sm mb-4">Aprende a gestionar inventarios y mantener el flujo de materiales sin interrupciones.</p>
-                            <a href="blog/control-materiales-obra.html" class="text-gc-orange font-semibold text-sm hover:underline">Leer más →</a>
-                        </div>
-                    </article>
-                    <article class="blog-card-slider flex-none w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-slate-50 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="imagenes/pantalla rutacritica.png" alt="Ruta crítica" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <span class="text-xs font-semibold text-gc-orange uppercase tracking-wide">Planificación</span>
-                            <h3 class="font-bold text-gc-dark mt-2 mb-2">Ruta Crítica en Construcción: Guía Completa</h3>
-                            <p class="text-slate-500 text-sm mb-4">Domina la metodología CPM para identificar tareas críticas y garantizar entregas a tiempo.</p>
-                            <a href="blog/ruta-critica-construccion.html" class="text-gc-orange font-semibold text-sm hover:underline">Leer más →</a>
-                        </div>
-                    </article>
-                    <article class="blog-card-slider flex-none w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-slate-50 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="imagenes/getracoo pueba  (1).jpeg" alt="Software construcción" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <span class="text-xs font-semibold text-gc-orange uppercase tracking-wide">Tecnología</span>
-                            <h3 class="font-bold text-gc-dark mt-2 mb-2">Top 5 Software de Construcción Chile 2026</h3>
-                            <p class="text-slate-500 text-sm mb-4">Comparativa de herramientas digitales para gestión de proyectos en Chile.</p>
-                            <a href="blog/software-construccion-chile.html" class="text-gc-orange font-semibold text-sm hover:underline">Leer más →</a>
-                        </div>
-                    </article>
-                    <article class="blog-card-slider flex-none w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-slate-50 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="imagenes/getracoo pueba  (2).jpeg" alt="Caso de éxito" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <span class="text-xs font-semibold text-gc-orange uppercase tracking-wide">Casos de Éxito</span>
-                            <h3 class="font-bold text-gc-dark mt-2 mb-2">Cómo Reducir 40% los Retrasos en Obra</h3>
-                            <p class="text-slate-500 text-sm mb-4">Constructora chilena transformó su gestión con software digital.</p>
-                            <a href="blog/caso-exito-reduccion-retrasos.html" class="text-gc-orange font-semibold text-sm hover:underline">Leer más →</a>
-                        </div>
-                    </article>
-                    <article class="blog-card-slider flex-none w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-slate-50 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="imagenes/getracoo pueba  (3).jpeg" alt="Documentación digital" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="p-6">
-                            <span class="text-xs font-semibold text-gc-orange uppercase tracking-wide">Organización</span>
-                            <h3 class="font-bold text-gc-dark mt-2 mb-2">Documentación Digital: De Papel a la Nube</h3>
-                            <p class="text-slate-500 text-sm mb-4">Transforma tu gestión documental con checklist y plantillas.</p>
-                            <a href="blog/documentacion-obra-digital.html" class="text-gc-orange font-semibold text-sm hover:underline">Leer más →</a>
-                        </div>
-                    </article>
+            <div class="gs-reveal flex items-center justify-center">
+                <div class="relative w-full max-w-lg pb-14">
+                    <img src="imagenes/Dasboard gestracoo avnaces .png" alt="Dashboard Avances GestraCOO" class="w-full rounded-2xl shadow-lg">
+                    <img src="imagenes/fotocelularavnaces.png" alt="App móvil Avances GestraCOO" class="absolute -bottom-10 left-1/2 -translate-x-24 w-16 md:w-20 rounded-xl shadow-2xl border-2 border-white">
+                    <img src="imagenes/fotocelularcalidad.png" alt="App móvil Calidad GestraCOO" class="absolute -bottom-10 left-1/2 translate-x-4 w-16 md:w-20 rounded-xl shadow-2xl border-2 border-white">
                 </div>
             </div>
-
-            <button class="blog-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 rounded-full bg-gc-dark text-white flex items-center justify-center shadow-lg hover:bg-gc-orange transition-colors hidden md:flex">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
         </div>
 
-        <div class="flex justify-center gap-2 mt-8">
-            <span class="blog-dot w-2 h-2 rounded-full bg-gc-orange cursor-pointer" data-index="0"></span>
-            <span class="blog-dot w-2 h-2 rounded-full bg-slate-300 cursor-pointer" data-index="1"></span>
-            <span class="blog-dot w-2 h-2 rounded-full bg-slate-300 cursor-pointer" data-index="2"></span>
-            <span class="blog-dot w-2 h-2 rounded-full bg-slate-300 cursor-pointer" data-index="3"></span>
-            <span class="blog-dot w-2 h-2 rounded-full bg-slate-300 cursor-pointer" data-index="4"></span>
-            <span class="blog-dot w-2 h-2 rounded-full bg-slate-300 cursor-pointer" data-index="5"></span>
+        <!-- 3. Cierre de Subcontratos — imagen izq, texto der -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-20 pb-20 border-b border-slate-100">
+            <div class="gs-reveal flex items-center justify-center order-2 lg:order-1">
+                <div class="w-full max-w-lg rounded-2xl shadow-lg overflow-hidden">
+                    <img src="imagenes/cierresubcontrato.png" alt="Cierre de subcontratos GestraCOO" class="w-full scale-[1.01] object-cover">
+                </div>
+            </div>
+            <div class="order-1 lg:order-2">
+                <div class="gs-reveal inline-flex items-center gap-2 text-gc-orange text-xs font-semibold tracking-widest uppercase mb-4">
+                    <i data-lucide="clipboard-list" class="lc-badge"></i><span>03 — Cierre de Subcontratos</span>
+                </div>
+                <h3 class="gs-reveal text-xl md:text-2xl font-extrabold text-gc-dark leading-tight mb-4">Ninguna partida arranca sin contrato firmado</h3>
+                <p class="gs-reveal text-sm text-slate-500 leading-relaxed">Cada subcontrato sigue su flujo de cierre: envío de presupuesto, comparativo, negociación, pre-calificación y contrato firmado, con fechas atadas al inicio de la partida según programa. Si alguna etapa se atrasa, la alerta llega antes de que la obra arranque sin contrato listo.</p>
+            </div>
         </div>
+
+        <!-- 4. Cierre de Materiales — texto izq, imagen der -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-20 pb-20 border-b border-slate-100">
+            <div>
+                <div class="gs-reveal inline-flex items-center gap-2 text-gc-orange text-xs font-semibold tracking-widest uppercase mb-4">
+                    <i data-lucide="package" class="lc-badge"></i><span>04 — Cierre de Materiales</span>
+                </div>
+                <h3 class="gs-reveal text-xl md:text-2xl font-extrabold text-gc-dark leading-tight mb-4">Ninguna partida empieza esperando un pedido</h3>
+                <p class="gs-reveal text-sm text-slate-500 leading-relaxed">Cubicación, revisión, Solped, OC aprobada y material en obra: cada etapa con fecha vinculada al inicio de la partida según programa. GestraCOO alerta cuando el proceso se atrasa para que el material esté en obra antes de que lo necesiten.</p>
+            </div>
+            <div class="gs-reveal flex items-center justify-center">
+                <img src="imagenes/cierremateriales.png" alt="Cierre de materiales GestraCOO" class="w-full max-w-lg rounded-2xl shadow-lg">
+            </div>
+        </div>
+
+        <!-- 5. Certificaciones — imagen izq, texto der -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            <div class="gs-reveal flex items-center justify-center order-2 lg:order-1">
+                <img src="imagenes/certificaciones.png" alt="Certificaciones municipales GestraCOO" class="w-full max-w-lg rounded-2xl shadow-lg">
+            </div>
+            <div class="order-1 lg:order-2">
+                <div class="gs-reveal inline-flex items-center gap-2 text-gc-orange text-xs font-semibold tracking-widest uppercase mb-4">
+                    <i data-lucide="shield-check" class="lc-badge"></i><span>05 — Certificaciones · Recepción municipal</span>
+                </div>
+                <h3 class="gs-reveal text-xl md:text-2xl font-extrabold text-gc-dark leading-tight mb-4">Recepción municipal sin sorpresas de última hora</h3>
+                <p class="gs-reveal text-sm text-slate-500 leading-relaxed">Cada certificado, protocolo y ensaye organizado y vigente en la plataforma. Cuando llegue la inspección municipal, todo está ordenado, trazable y listo. Sin búsquedas de papel, sin correos de último minuto.</p>
+            </div>
+        </div>
+
     </div>
 </section>
+
 
 <!-- ============================================================
      CTA FINAL
@@ -867,7 +725,7 @@
 ============================================================ -->
 <div id="cookie-banner" class="cookie-banner">
     <div class="cookie-inner">
-        <p class="text-sm text-white/80"><strong class="text-white">🍪 Usamos cookies</strong> para mejorar tu experiencia y analizar el tráfico.</p>
+        <p class="text-sm text-white/80"><strong class="text-white"> Usamos cookies</strong> para mejorar tu experiencia y analizar el tráfico.</p>
         <div class="flex items-center gap-3 flex-shrink-0">
             <button id="cookie-reject" class="text-white/60 text-sm hover:text-white transition-colors">Rechazar</button>
             <button id="cookie-accept" class="bg-gc-orange hover:bg-gc-orange-dark text-white text-sm font-semibold px-5 py-2 rounded-full transition-colors">Aceptar</button>
