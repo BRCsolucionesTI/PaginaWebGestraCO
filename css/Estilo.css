@@ -466,8 +466,8 @@ body {
 
 .hub-wrapper {
   position: relative;
-  width: 360px;
-  height: 480px;
+  width: 292px;
+  height: 390px;
   flex-shrink: 0;
 }
 
@@ -485,8 +485,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background: #fff;
   border: 2px solid #E2E8F0;
@@ -498,27 +498,27 @@ body {
 }
 
 .hub-center img {
-  width: 62px;
-  height: 62px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
 }
 
 /* Nodos: posicionamiento */
 .hub-node {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   perspective: 400px;
   z-index: 2;
 }
 
 /* Flujo direccional: Programa(izq) → GC(centro) → 5 salidas(der) */
-.hub-n1 { top: 200px; left:   0px; } /* Programa — izquierda, centro  */
-.hub-n5 { top:  20px; left: 276px; } /* Avances — arriba der. 1       */
-.hub-n6 { top: 110px; left: 276px; } /* Calidad — arriba der. 2       */
-.hub-n2 { top: 200px; left: 276px; } /* Subcontratos — centro der.    */
-.hub-n3 { top: 290px; left: 276px; } /* Materiales — abajo der. 1     */
-.hub-n4 { top: 380px; left: 276px; } /* Certificaciones — abajo der. 2 */
+.hub-n1 { top: 160px; left:   0px; } /* Programa — izquierda, centro  */
+.hub-n5 { top:   4px; left: 215px; } /* Avances — arriba der. 1       */
+.hub-n6 { top:  82px; left: 215px; } /* Calidad — arriba der. 2       */
+.hub-n2 { top: 160px; left: 215px; } /* Subcontratos — centro der.    */
+.hub-n3 { top: 238px; left: 215px; } /* Materiales — abajo der. 1     */
+.hub-n4 { top: 316px; left: 215px; } /* Recepción Municipal — abajo der. 2 */
 
 /* Inner: flip container */
 .hub-node-inner {
@@ -556,18 +556,18 @@ body {
 
 /* Icono dentro del nodo */
 .hub-icon {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   stroke-width: 2;
 }
 
 /* Texto etiqueta */
 .hub-face span {
-  font-size: 9px;
+  font-size: 7px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  line-height: 1;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
   text-align: center;
 }
 
@@ -579,11 +579,11 @@ body {
 
 /* Mobile: reducir tamaño del hub */
 @media (max-width: 640px) {
-  .hub-wrapper { width: 280px; height: 280px; }
-  .hub-center  { width: 70px; height: 70px; }
-  .hub-center img { width: 48px; height: 48px; }
-  .hub-node    { width: 64px; height: 64px; }
-  .hub-icon    { width: 16px; height: 16px; }
+  .hub-wrapper { width: 220px; height: 220px; }
+  .hub-center  { width: 54px; height: 54px; }
+  .hub-center img { width: 38px; height: 38px; }
+  .hub-node    { width: 56px; height: 56px; }
+  .hub-icon    { width: 13px; height: 13px; }
 }
 
 /* ============================================================
@@ -1102,8 +1102,8 @@ body {
   /* Nodos */
   .hub-mn {
     position: absolute;
-    width: 56px;
-    height: 56px;
+    width: 64px;
+    height: 64px;
     perspective: 300px;
     z-index: 2;
   }
@@ -1139,9 +1139,9 @@ body {
   .hub-mn-icon { width: 16px; height: 16px; stroke-width: 2; }
 
   .hub-mn span {
-    font-size: 7px; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.03em;
-    text-align: center; line-height: 1;
+    font-size: 5.5px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.01em;
+    text-align: center; line-height: 1.2;
     font-family: 'Inter', sans-serif;
   }
 
